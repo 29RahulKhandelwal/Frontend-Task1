@@ -1,0 +1,26 @@
+.user{
+    width: 31%;
+    display: inline-flex;
+    margin: 20px;
+}
+.userimg{
+    width: 10%;
+    position: relative;
+    top: -4px;
+}
+.img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.username{
+    width: 30%;
+    margin: 2px 35px;
+}
+.name{
+    font-size: 18px;
+}
+.email{
+    font-size: 14px;
+    color: lightgray;
+}

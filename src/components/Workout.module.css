@@ -1,0 +1,17 @@
+.dates{
+    position: relative;
+    top: -40px;
+    left: 8px;
+    font-size: large;
+    font-weight: 500;
+}
+.performedDate, .scheduledDate{
+    margin: 18px 0px;
+    font-size: 600;
+}
+.performancedatespace{
+    margin-left: 5px;
+}
+.scheduledatespace{
+    margin-left: 14px;
+}

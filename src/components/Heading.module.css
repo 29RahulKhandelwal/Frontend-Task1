@@ -1,0 +1,17 @@
+.heading{
+    display: inline-flex;
+    width: 100%;
+    margin: 30px 30%;
+}
+.steps, .workout, .nutrition{
+    width: 20%;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+.fa{
+    margin: 0px 10px;
+}
+.dumbbell{
+    transform: rotate(-45deg);
+}
