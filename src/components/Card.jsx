@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from './Button';
 import classes from "./Card.module.css";
 import CircularBar from './CircularBar';
@@ -10,12 +10,18 @@ import Workout from './Workout';
 
 const Card = (props) => {
     const {data}=props;
+    const [stepsTarget,setStepsTarget]=useState([]);
+
+    function handleStepsTarget(data){
+        return setStepsTarget(data);
+    }
+
   return (
     <div className={classes.card} key={data.userId}>
         <User data={data} />
         <div className={classes.usersteps} key={data.userId}>
-            <CircularBar data={data} />
-            <StepsTarget data={data} />
+            <CircularBar data={data} stepstargetData={stepsTarget} />
+            <StepsTarget data={data} stepstargetData={handleStepsTarget} />
         </div>
         <div className={classes.userworkout}>
             <Workout data={data} />

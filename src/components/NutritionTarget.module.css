@@ -2,11 +2,16 @@
     font-size: 18px;
     font-weight: 600;
     text-align: center;
-    margin-left: 18px;
+    margin-left: -40px;
     margin-top: 34px;
 }
 .targettextSize{
     color: darkgray;
     margin-left: -39px;
     margin-top: 32px;
+}
+.target{
+    position: relative;
+    top: 4px;
+    left: 8px;
 }
