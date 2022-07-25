@@ -24,3 +24,10 @@
     font-size: 14px;
     color: lightgray;
 }
+
+@media (min-width:480px) and (max-width:992px){
+    .user{
+        width: 100%;
+        justify-content: center;
+    }
+}

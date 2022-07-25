@@ -15,3 +15,14 @@
 .dumbbell{
     transform: rotate(-45deg);
 }
+@media (min-width:992px) and (max-width:1080px){
+    .heading{
+        margin: 30px 25%;
+    }
+}
+
+@media (min-width:480px) and (max-width:992px){
+    .heading{
+        display: none;
+    }
+}

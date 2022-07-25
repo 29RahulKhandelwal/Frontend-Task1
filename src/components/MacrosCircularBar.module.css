@@ -1,0 +1,37 @@
+.circularbar{
+    margin: 10px auto;
+    background-color: #101e30;
+    position: relative;
+    top: 10px;
+    width: 94%;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 52px;
+}
+.title{
+    position: absolute;
+    top: 4px;
+    left: 15px;
+}
+.targetprotein{
+    position: relative;
+    left: 88px;
+    top: 4px;
+}
+.progressbar{
+    background-color: black;
+    width: 89%;
+    margin: 0px auto;
+    position: relative;
+    top: 12px;
+    border-radius: 8px;
+    display: flex;
+    font-size: 10px;
+    height: 12px;
+}
+.progress{
+    max-width: 89%;
+    border-radius: 8px;
+    margin-right: 4px;
+    height: 12px;
+}

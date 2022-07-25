@@ -32,3 +32,34 @@
     top: 7px;
     position: relative;
 }
+.toggle{
+    display: none;
+}
+@media (min-width:992px) and (max-width:1080px){
+    .usersteps, .userworkout, .usernutrition{
+        width: 18.25%;
+        position: relative;   
+        left: -70px;
+    }
+}
+@media (min-width:480px) and (max-width:992px){
+    .usersteps, .userworkout, .usernutrition,.usernotification{
+        margin: 0px auto;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .usernutrition{
+        margin-top: 0;
+    }
+    .card{
+        margin-top: 35px;
+        display: grid;
+        height: 100%;
+    }
+    .toggle{
+        display: flex;
+        position: relative;
+        top: 25px;
+        right: 60px;
+    }
+}
