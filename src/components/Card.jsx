@@ -29,7 +29,7 @@ const Card = (props) => {
         <div className={classes.usernutrition}>
             <PieChartDiagram data={data} />
             <NutritionTarget data={data} />
-            <Button top="16px" left="16px" />
+            <Button top="16px" left="22px" />
         </div>
         <div className={classes.usernotification}>
             <i class={`fa-regular fa-2x fa-bell ${classes.bell}`}></i>
