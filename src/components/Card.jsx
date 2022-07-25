@@ -11,26 +11,24 @@ import Workout from './Workout';
 const Card = (props) => {
     const {data}=props;
     const [stepsTarget,setStepsTarget]=useState([]);
-    const [isToggle,setIsToggle]=useState(false);
 
     function handleStepsTarget(data){
         return setStepsTarget(data);
     }
 
-    function handleToggle(){
-        setIsToggle(true)
-    }
-
   return (
     <div className={classes.card} key={data.userId}>
         <User data={data} />
+        <div className={classes.steps}><i class={`${classes.fa} fa-solid fa-person-running`}></i> Steps</div>
         <div className={classes.usersteps} key={data.userId}>
             <CircularBar data={data} stepstargetData={stepsTarget} />
             <StepsTarget data={data} stepstargetData={handleStepsTarget} />
         </div>
+        <div className={classes.workout}><i class={`${classes.fa} fa-solid fa-dumbbell ${classes.dumbbell}`}></i> Workout</div>
         <div className={classes.userworkout}>
             <Workout data={data} />
         </div>
+        <div className={classes.nutrition}><i class={`${classes.fa} fa-solid fa-bell-concierge`}></i> Nutrition</div>
         <div className={classes.usernutrition}>
             <PieChartDiagram data={data} />
             <NutritionTarget data={data} />
@@ -39,10 +37,6 @@ const Card = (props) => {
         <div className={classes.usernotification}>
             <i class={`fa-regular fa-2x fa-bell ${classes.bell}`}></i>
         </div>
-        <div className={classes.toggle}>
-            <i class="fa-solid fa-angle-down fa-2x" onClick={handleToggle}></i>
-        </div>
-        {/* {isToggle && <div className={classes.newCard}></div>} */}
     </div>
   )
 }

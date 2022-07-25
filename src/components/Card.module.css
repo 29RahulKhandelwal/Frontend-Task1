@@ -32,9 +32,7 @@
     top: 7px;
     position: relative;
 }
-.toggle{
-    display: none;
-}
+.steps, .workout, .nutrition{display: none;}
 @media (min-width:992px) and (max-width:1080px){
     .usersteps, .userworkout, .usernutrition{
         width: 18.25%;
@@ -48,9 +46,6 @@
         margin-top: 20px;
         justify-content: center;
     }
-    .usernutrition{
-        margin-top: 0;
-    }
     .card{
         margin-top: 35px;
         display: grid;
@@ -61,5 +56,17 @@
         position: relative;
         top: 25px;
         right: 60px;
+    }
+    .steps, .workout, .nutrition{
+        width: 20%;
+        font-size: 24px;
+        font-weight: 500;
+        display: inline-flex;
+        margin: 0px auto;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .usernotification{
+        margin-top: 40px;
     }
 }
