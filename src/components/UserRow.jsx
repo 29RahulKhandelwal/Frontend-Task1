@@ -73,7 +73,7 @@ const usersData = [
     }
 ];
 
-const UserRow = () => {
+const UserRow = (props) => {
   return (
     <div className={classes.userrow}>
         <Heading />

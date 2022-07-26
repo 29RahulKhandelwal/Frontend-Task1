@@ -1,0 +1,11 @@
+.route{
+    text-align: center;
+    font-size: 4rem;
+}
+.btn{
+    height: 50px;
+    width: 100px;
+    background: #101e30;
+    color: white;
+    cursor: pointer;
+}

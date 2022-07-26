@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Button from './Button';
 import classes from "./Card.module.css";
 import CircularBar from './CircularBar';
 import NutritionTarget from './NutritionTarget';
@@ -7,6 +6,7 @@ import PieChartDiagram from './PieChartDiagram';
 import StepsTarget from './StepsTarget';
 import User from './User';
 import Workout from './Workout';
+import NutritionButton from './NutritionButton';
 
 const Card = (props) => {
     const {data}=props;
@@ -32,7 +32,7 @@ const Card = (props) => {
         <div className={classes.usernutrition}>
             <PieChartDiagram data={data} />
             <NutritionTarget data={data} />
-            <Button top="16px" left="22px" />
+            <NutritionButton top="16px" left="22px" user={data.userId} />
         </div>
         <div className={classes.usernotification}>
             <i class={`fa-regular fa-2x fa-bell ${classes.bell}`}></i>
